@@ -104,13 +104,14 @@ start: function() {
 
     }
 
-    triviaBoard.append('<button class="btn-primary id="done">Done</button>');
+    triviaBoard.append('<button class="btn-primary" id="done">Done</button>');
 
 },
 
 done: function() {
     console.log("Finished");
-    $.each($("input[name='question-0]:checked"), function() {
+    $.each($("input[name='question-0']:checked"), function() {
+        console.log
         if ($(this).val()=== questionsAnswers[0].correctAnswer) {
             game.correct++;
         } else {
@@ -118,7 +119,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-1]:checked"), function() {
+    $.each($("input[name='question-1']:checked"), function() {
         if ($(this).val()=== questionsAnswers[1].correctAnswer) {
             game.correct++;
         } else {
@@ -126,7 +127,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-2]:checked"), function() {
+    $.each($("input[name='question-2']:checked"), function() {
         if ($(this).val()=== questionsAnswers[2].correctAnswer) {
             game.correct++;
         } else {
@@ -134,7 +135,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-3]:checked"), function() {
+    $.each($("input[name='question-3']:checked"), function() {
         if ($(this).val()=== questionsAnswers[3].correctAnswer) {
             game.correct++;
         } else {
@@ -142,7 +143,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-4]:checked"), function() {
+    $.each($("input[name='question-4']:checked"), function() {
         if ($(this).val()=== questionsAnswers[4].correctAnswer) {
             game.correct++;
         } else {
@@ -150,7 +151,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-5]:checked"), function() {
+    $.each($("input[name='question-5']:checked"), function() {
         if ($(this).val()=== questionsAnswers[5].correctAnswer) {
             game.correct++;
         } else {
@@ -158,7 +159,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-6]:checked"), function() {
+    $.each($("input[name='question-6']:checked"), function() {
         if ($(this).val()=== questionsAnswers[6].correctAnswer) {
             game.correct++;
         } else {
@@ -166,7 +167,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-7]:checked"), function() {
+    $.each($("input[name='question-7']:checked"), function() {
         if ($(this).val()=== questionsAnswers[7].correctAnswer) {
             game.correct++;
         } else {
@@ -174,7 +175,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-8]:checked"), function() {
+    $.each($("input[name='question-8']:checked"), function() {
         if ($(this).val()=== questionsAnswers[8].correctAnswer) {
             game.correct++;
         } else {
@@ -182,7 +183,7 @@ done: function() {
         }
     });
 
-    $.each($("input[name='question-9]:checked"), function() {
+    $.each($("input[name='question-9']:checked"), function() {
         if ($(this).val()=== questionsAnswers[9].correctAnswer) {
             game.correct++;
         } else {
